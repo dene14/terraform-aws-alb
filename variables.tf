@@ -15,7 +15,7 @@ variable "log_retention_days" {
 variable "certificate_arn" {}
 
 variable "subnets" {
-  type = "list"
+  type = list
 }
 
 variable "internal" {
@@ -23,7 +23,7 @@ variable "internal" {
 }
 
 variable "additional_security_groups" {
-  type = "list"
+  type = list
   default = []
 }
 
@@ -32,6 +32,6 @@ variable "idle_timeout" {
 }
 
 variable "access_logs" {
-  type = "list"
+  type = list
   default = []
 }
